@@ -10,7 +10,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       host: 'localhost', // aqui é host da banco de dados
       port: 3306, // a porta do banco de dados
       username: 'root', // usuario de voces.
-      password: '110294', // senha do banco de dados de vcs
+      password: 'root', // senha do banco de dados de vcs
       database: 'db_vitarun', // nome do banco de dados do vittarum. (ps Eu esqueci um t peço perdao.)
       entities: [],
       synchronize: true,
