@@ -1,3 +1,4 @@
+import { TypeOrmModule } from '@nestjs/typeorm';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
