@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, ParseIntPipe, Post } from "@nestjs/common";
 import { LojaService } from "../services/loja.service";
-import { Loja } from "../entities/loja.entity";
+import { Loja } from "../entitites/loja.entity";
 
 
 @Controller ("/loja") // http://localhost:4000/loja 

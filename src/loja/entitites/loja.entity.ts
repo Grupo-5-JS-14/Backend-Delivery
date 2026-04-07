@@ -1,4 +1,4 @@
-import { IsNotEmpty, Length, MaxLength, MinLength } from 'class-validator';
+import { IsNotEmpty, Length} from 'class-validator';
 import {  Column,  Entity, PrimaryGeneratedColumn, } from 'typeorm';
 
 @Entity({ name: 'db_vitarun' }) //Cria uma tabela chamada tb_postagem
