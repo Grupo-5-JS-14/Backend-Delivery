@@ -1,3 +1,30 @@
+
+## Como rodar o projeto
+
+Instale as dependências:
+
+```bash
+# Tipagens do Node (dev)
+npm install --save-dev @types/node
+
+# Validação e transformação de dados
+npm install class-validator class-transformer
+
+# TypeORM + integração com NestJS
+npm install @nestjs/typeorm typeorm
+
+# Driver do MySQL
+npm install mysql2
+
+# Validação de CPF e CNPJ
+npm install cpf-cnpj-validator
+```
+---
+
+# Run
+$ npm run start
+
+--- 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
