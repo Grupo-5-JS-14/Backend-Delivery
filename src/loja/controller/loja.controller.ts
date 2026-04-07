@@ -1,26 +1,28 @@
-import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, ParseIntPipe, Post, Put } from "@nestjs/common";
+import { Body, Controller, Delete, Get, Put, HttpCode, HttpStatus, Param, ParseIntPipe, Post, Query } from "@nestjs/common";
 import { LojaService } from "../services/loja.service";
 import { Loja } from "../entitites/loja.entity";
+import { CreateLojaDto } from '../dto/create-loja.dto';
 
 
-@Controller ("/loja") // http://localhost:4000/loja 
-export class LojaController{
-    constructor(private readonly lojaService : LojaService){}
+@Controller("/loja") // http://localhost:4000/loja 
+export class LojaController {
+    constructor(private readonly lojaService: LojaService) { }
 
-    @Get() 
+    @Get()
     @HttpCode(HttpStatus.OK)
-    findAll(){ // pesquisar todas as lojas
+    findAll() { // pesquisar todas as lojas
         return this.lojaService.findAll();
     }
-    @Get('/:id') //ex: http://localhost:4000/loja/1
+
+    @Get(':id') //ex: http://localhost:4000/loja/1
     @HttpCode(HttpStatus.OK)
-    findById(@Param('id', ParseIntPipe) id: number){ // pesquisar por id
+    findById(@Param('id', ParseIntPipe) id: number) { // pesquisar por id
         return this.lojaService.findById(id);
     }
 
     @Get('/nome/:nome') // ex: http://localhost:4000/loja/(nome)
     @HttpCode(HttpStatus.OK)
-    findByNome(@Param('nome') nome: string) : Promise<Loja[]>{ // pesquisar por nome
+    findByNome(@Param('nome') nome: string): Promise<Loja[]> { // pesquisar por nome
         return this.lojaService.findByNome(nome);
     }
     
@@ -30,17 +32,31 @@ export class LojaController{
         return this.lojaService.update(loja);
     }
 
-    @Post() // ex: http://localhost:4000/loja
+    @Post() // http://localhost:4000/loja
+    @HttpCode(HttpStatus.CREATED) // 201 para criação
+    async create(@Body() dto: CreateLojaDto) {
+        const lojaCriada = await this.lojaService.create(dto);
+        return {
+            message: 'Criado com sucesso',
+        };
+    }
+
+    @Put()
     @HttpCode(HttpStatus.OK)
-    create(@Body() loja: Loja): Promise<Loja>{  // criar pelo Json
-        return this.lojaService.create(loja);
+    async update(@Body() loja: Loja) {
+        const lojaAtualizada = await this.lojaService.update(loja);
+        return {
+            message: 'Atualizado com sucesso',
+            loja: lojaAtualizada,
+        };
     }
 
 
     @Delete('/:id') //ex: http://localhost:4000/loja/(id)
     @HttpCode(HttpStatus.OK)
-    delete(@Param('id', ParseIntPipe) id: number){ // deletar
-        return this.lojaService.delete(id);
+    async delete(@Param('id', ParseIntPipe) id: number) { // deletar
+        await this.lojaService.delete(id);
+        return { message: 'Deletado com sucesso' };
     }
 
 }
