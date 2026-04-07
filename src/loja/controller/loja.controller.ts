@@ -25,6 +25,12 @@ export class LojaController {
     findByNome(@Param('nome') nome: string): Promise<Loja[]> { // pesquisar por nome
         return this.lojaService.findByNome(nome);
     }
+    
+    @Put()
+    @HttpCode(HttpStatus.OK)
+    update(@Body() loja: Loja): Promise<Loja>{
+        return this.lojaService.update(loja);
+    }
 
     @Post() // http://localhost:4000/loja
     @HttpCode(HttpStatus.CREATED) // 201 para criação
@@ -44,6 +50,7 @@ export class LojaController {
             loja: lojaAtualizada,
         };
     }
+
 
     @Delete('/:id') //ex: http://localhost:4000/loja/(id)
     @HttpCode(HttpStatus.OK)
