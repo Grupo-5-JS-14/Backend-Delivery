@@ -186,13 +186,13 @@ Projeto desenvolvido pela turma **JavaScript 14** da **Generation Brasil**:
 
 | Nome |
 |------|
-| André Lucas - P.O |
-| Andressa Andrade - Dev|
-| Bruna Zuppini - Dev |
-| Douglas Santos - Dev |
-| Gabriel Coutinho - Dev |
-| Kay Ira - Dev Tester|
-| Lohanna Benjamim - Dev Tester|
+| <a href="https://github.com/luhdias-png">André Lucas</a> - P.O |
+| <a href="https://github.com/Dessxevy">Andressa Andrade</a> - Dev|
+| <a href="">Bruna Zuppini</a> - Dev |
+| <a href="https://github.com/DougSan7">Douglas Santos</a> - Dev |
+| <a href="https://github.com/gcoutinhoo">Gabriel Coutinho</a> - Dev |
+| <a href="http://">Kay Ira</a> - Dev Tester|
+| <a href="https://github.com/lohannab">Lohanna Benjamim</a> - Dev Tester|
 
 > São Paulo – SP · 2026
 
