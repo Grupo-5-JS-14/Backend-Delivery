@@ -186,13 +186,13 @@ Projeto desenvolvido pela turma **JavaScript 14** da **Generation Brasil**:
 
 | Nome |
 |------|
-| <a href="https://github.com/luhdias-png" target="_blank">André Lucas</a> - P.O |
-| <a href="https://github.com/Dessxevy" target="_blank">Andressa Andrade</a> - Dev|
+| <a href="https://github.com/luhdias-png" target="_blank" rel="noopener noreferrer">André Lucas</a> - P.O |
+| <a href="https://github.com/Dessxevy" target="_blank" rel="noopener noreferrer">Andressa Andrade</a> - Dev|
 | <a href="#">Bruna Zuppini</a> - Dev |
-| <a href="https://github.com/DougSan7" target="_blank">Douglas Santos</a> - Dev |
-| <a href="https://github.com/gcoutinhoo" target="_blank">Gabriel Coutinho</a> - Dev |
+| <a href="https://github.com/DougSan7" target="_blank" rel="noopener noreferrer">Douglas Santos</a> - Dev |
+| <a href="https://github.com/gcoutinhoo" target="_blank" rel="noopener noreferrer">Gabriel Coutinho</a> - Dev |
 | <a href="#">Kay Ira</a> - Dev Tester|
-| <a href="https://github.com/lohannab" target="_blank">Lohanna Benjamim</a> - Dev Tester|
+| <a href="https://github.com/lohannab" target="_blank" rel="noopener noreferrer">Lohanna Benjamim</a> - Dev Tester|
 
 > São Paulo – SP · 2026
 
